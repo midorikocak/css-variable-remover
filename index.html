@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- link rel="manifest" href="site.webmanifest" -->
+  <!--link rel="apple-touch-icon" href="icon.png" -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/marx.min.css">
+
+  <script src="js/codemirror.js"></script>
+  <script src="js/css.js"></script>
+  <link rel="stylesheet" href="css/codemirror.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <header>
+    <h1>Online CSS Variable removal tool</h1>
+    <p>Remove and replaces :root variables in your css file.</p>
+
+  </header>
+
+  <main>
+<section id="editors">
+      <textarea id="pasteEditor">:root {
+  --base-font-size: 16px;
+  --link-color: #6495ed;
+}
+
+p {
+  font-size: var( --base-font-size );
+}
+
+a {
+  font-size: var( --base-font-size );
+  color: var( --link-color );
+}
+      </textarea>
+      <button id="convertButton">Convert</button>
+      <textarea id="convertEditor">
+      </textarea>
+    </section>
+  </main>
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

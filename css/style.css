@@ -1,0 +1,24 @@
+#editors{
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  align-items: center;
+}
+
+.CodeMirror{
+  height:80vh;
+  width: 50%;
+}
+
+main{
+  max-width: 100%;
+  padding: 1rem;
+}
+
+header{
+  text-align: center;
+}
+
+button{
+  margin: 1rem;
+}
