@@ -23,3 +23,8 @@ header{
 button{
   margin: 1rem;
 }
+
+.buttons{
+  width: min-content;
+  text-align: center;
+}

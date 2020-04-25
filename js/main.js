@@ -69,3 +69,9 @@ let convertButton = document.getElementById('convertButton');
 convertButton.addEventListener('click', ()=>{
   convertEditor.setValue(replace(pasteEditor.getValue()));
 })
+
+let resetButton = document.getElementById('resetButton');
+
+resetButton.addEventListener('click', ()=>{
+  convertEditor.setValue('');
+})
