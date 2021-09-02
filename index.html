@@ -1,78 +1,66 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="This site replaces CSS variables with their values">
+	<meta name="theme-color" content="#fafafa">
 
-  <!-- link rel="manifest" href="site.webmanifest" -->
-  <!--link rel="apple-touch-icon" href="icon.png" -->
-  <!-- Place favicon.ico in the root directory -->
+	<link rel="manifest" href="site.webmanifest">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/marx.min.css">
+	<link rel="icon" href="assets/icons/icon.png" type="image/png" sizes="192x192">
+	<link rel="apple-touch-icon" href="assets/icons/icon.png" type="image/png" sizes="192x192">
+	<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon" sizes="32x32">
+	<title>CSS Variable Remover</title>
 
-  <script src="js/codemirror.js"></script>
-  <script src="js/css.js"></script>
-  <link rel="stylesheet" href="css/codemirror.css">
+	<link rel="stylesheet" href="assets/codemirror.min.css">
+	<link rel="stylesheet" href="assets/style.css">
 
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="theme-color" content="#fafafa">
+	<script src="scripts/codemirror.min.js"></script>
+	<script src="scripts/codemirror-css.min.js"></script>
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-
-  <header>
-    <h1>Online CSS Variable removal tool</h1>
-    <p>Removes and replaces :root variables in your css file.</p>
-
-  </header>
-
-  <main>
-<section id="editors">
-      <textarea id="pasteEditor">:root {
-  --base-font-size: 16px;
-  --link-color: #6495ed;
+	<header>
+		<h1>Online CSS Variable removal tool</h1>
+		<p>Removes and replaces :root variables in your css file.</p>
+	</header>
+	<main>
+		<section id="editors">
+			<textarea id="pasteEditor">:root {
+    --base-font-size: 16px;
+    --link-color: #6495ed;
 }
 
 p {
-  font-size: var( --base-font-size );
+    font-size: var(--base-font-size);
 }
 
 a {
-  font-size: var( --base-font-size );
-  color: var( --link-color );
-}
-      </textarea>
-  <div class="buttons">
-    <button id="convertButton">Convert</button>
-    <button id="resetButton">Reset</button>
-  </div>
-      <textarea id="convertEditor">
-p {
-  font-size: 16px;
+    font-size: var(--base-font-size);
+    color: var(--link-color);
+}</textarea>
+			<div class="buttons">
+				<button id="convertButton">Convert</button>
+				<button id="clearButton">Clear</button>
+			</div>
+			<textarea id="convertEditor">p {
+    font-size: 16px;
 }
 
 a {
-  font-size: 16px;
-  color: #6495ed;
-}
-      </textarea>
-    </section>
-  </main>
+    font-size: 16px;
+    color: #6495ed;
+}</textarea>
+		</section>
+	</main>
 
-<a href="https://github.com/midorikocak/css-variable-remover"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+	<a href="https://github.com/midorikocak/css-variable-remover">
+		<img style="position:absolute;top:0;right:0;border:0;"
+			src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>
