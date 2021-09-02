@@ -88,6 +88,10 @@ button:disabled {
 	border: 1px solid #c4c4c4;
 }
 
+body {
+	background-color: #fafafa;
+}
+
 #editors {
 	display: flex;
 	flex-direction: row;
